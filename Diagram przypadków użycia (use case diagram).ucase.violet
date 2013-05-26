@@ -364,19 +364,19 @@ zapasowowej</string>
      <string>x</string>
      <void method="set">
       <object idref="Point2D$Double12"/>
-      <double>316.0</double>
+      <double>233.0</double>
      </void>
     </void>
     <void class="java.awt.geom.Point2D$Double" method="getField">
      <string>y</string>
      <void method="set">
       <object idref="Point2D$Double12"/>
-      <double>299.0</double>
+      <double>266.0</double>
      </void>
     </void>
     <void method="setLocation">
-     <double>316.0</double>
-     <double>299.0</double>
+     <double>233.0</double>
+     <double>266.0</double>
     </void>
    </object>
   </void>
@@ -440,15 +440,39 @@ wynagrodzenia</string>
     </void>
    </object>
   </void>
-  <void method="connect">
-   <object class="com.horstmann.violet.UseCaseRelationshipEdge"/>
-   <object idref="ActorNode0"/>
-   <object idref="UseCaseNode7"/>
+  <void method="addNode">
+   <object class="com.horstmann.violet.ActorNode" id="ActorNode4">
+    <void property="name">
+     <void property="text">
+      <string>Gość</string>
+     </void>
+    </void>
+   </object>
+   <object class="java.awt.geom.Point2D$Double" id="Point2D$Double15">
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Point2D$Double15"/>
+      <double>127.0</double>
+     </void>
+    </void>
+    <void class="java.awt.geom.Point2D$Double" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Point2D$Double15"/>
+      <double>204.0</double>
+     </void>
+    </void>
+    <void method="setLocation">
+     <double>127.0</double>
+     <double>204.0</double>
+    </void>
+   </object>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.UseCaseRelationshipEdge"/>
    <object idref="ActorNode0"/>
-   <object idref="UseCaseNode8"/>
+   <object idref="UseCaseNode7"/>
   </void>
   <void method="connect">
    <object class="com.horstmann.violet.UseCaseRelationshipEdge">
@@ -508,6 +532,20 @@ wynagrodzenia</string>
    <object class="com.horstmann.violet.UseCaseRelationshipEdge"/>
    <object idref="ActorNode3"/>
    <object idref="UseCaseNode10"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.UseCaseRelationshipEdge">
+    <void property="endArrowHead">
+     <object class="com.horstmann.violet.ArrowHead" field="TRIANGLE"/>
+    </void>
+   </object>
+   <object idref="ActorNode4"/>
+   <object idref="ActorNode0"/>
+  </void>
+  <void method="connect">
+   <object class="com.horstmann.violet.UseCaseRelationshipEdge"/>
+   <object idref="ActorNode0"/>
+   <object idref="UseCaseNode8"/>
   </void>
  </object>
 </java>
